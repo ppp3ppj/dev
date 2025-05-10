@@ -1,0 +1,32 @@
+# This is the configuration file for Ghostty.
+
+window-decoration = false
+
+# BG
+#background-opacity = 0.95
+
+#theme = tokyonight
+background = 000000
+theme = rose-pine
+
+
+font-size = 22
+font-family = "Fira Code"
+#font-family-bold = "Fira Code Bold"
+#font-family-italic = "Fira Code Bold"
+#font-family-bold-italic = "Fira Code Bold"
+
+cursor-style = block
+cursor-style-blink = false
+#shell-integration-features = no-cursor
+shell-integration-features = no-cursor,no-sudo,no-title
+gtk-titlebar = false
+
+#confirm disable
+confirm-close-surface = false
+
+command=/usr/bin/tmux
+
+# what is a prefix?
+# keybind = ctrl+d=scroll_page_fractional:0.5
+# keybind = ctrl+u=scroll_page_fractional:-0.5
