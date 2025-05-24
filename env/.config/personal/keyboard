@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
+# Super cool keyboard stuffs.
+# Required for x applications
+# For DEV
 alias asdfasdf="setxkbmap real-prog-dvorak"
+# For GAMING
 alias aoeuaoeu="setxkbmap us"
+
+# For init setxkb map when open editor or start
+# setxkbmap real-prog-dvorak
 
 setxkbmap -option caps:ctrl_modifier
