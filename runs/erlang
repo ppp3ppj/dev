@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+sudo pacman -Syu --needed \
+  base-devel \
+  autoconf \
+  automake \
+  libtool \
+  m4 \
+  jdk-openjdk \
+  unixodbc \
+  glu \
+  wxwidgets-gtk3 \
+  libglvnd \
+  libpng \
+  fop \
+  libxml2 \
+  ncurses \
+  openssl \
+  curl \
+  git
+
+yay -S kerl
+
+kerl build 27.3.4 otp-27.3.4
+kerl install otp-27.3.4 $HOME/.kerl/erlang/27.3.4
+
+# . $HOME/.kerl/erlang/27.3.4/activate

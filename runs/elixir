@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ELIXIR_VERSION="v1.18.4"
+INSTALL_DIR="$HOME/.local/elixir/${ELIXIR_VERSION#v}"
+
+echo "==> Cloning Elixir $ELIXIR_VERSION source code..."
+cd /tmp
+rm -rf elixir
+git clone https://github.com/elixir-lang/elixir.git
+cd elixir
+git checkout "$ELIXIR_VERSION"
+
+echo "==> Building Elixir..."
+make clean
+make
+
+echo "==> Installing Elixir to $INSTALL_DIR..."
+mkdir -p "$INSTALL_DIR"
+cp -r bin lib VERSION "$INSTALL_DIR"
