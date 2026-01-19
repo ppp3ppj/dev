@@ -3,15 +3,17 @@
 window-decoration = false
 
 # BG
-#background-opacity = 0.95
+background-opacity = 0.8
 
 #theme = tokyonight
-background = 000000
-theme = rose-pine
+#theme = rose-pine
+theme = Gruber Darker
+#
 
 
-font-size = 22
-font-family = "Fira Code"
+font-size = 20
+font-family = "Iosevka"
+#font-family = "Fira Code"
 #font-family-bold = "Fira Code Bold"
 #font-family-italic = "Fira Code Bold"
 #font-family-bold-italic = "Fira Code Bold"
